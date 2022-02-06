@@ -1,0 +1,118 @@
+div{
+    header{
+        h1{
+            color: red;
+            text-align: center;
+            font-size: 50px;
+            margin: 10px;
+            
+        }
+    }
+}
+
+.contenedor{
+    display: grid;
+    grid-template-areas: "header header"
+                            "nav nav"
+                            "main main"
+                            "footer footer";
+    justify-content: center;
+    header{
+        grid-area: header;
+        justify-self: center;
+        nav{
+            grid-area: nav;
+            main{
+                grid-area: main;
+                footer{
+                    grid-area: footer;
+                }
+                   
+            }
+        }
+        
+    }
+
+
+}
+
+/*estilo logo*/
+
+
+.logo{
+    width: 10%;
+    position: absolute;
+    left: 10px;
+    top: 0px;  
+}
+
+/*estilos de menu*/
+
+nav ul li{
+    &:hover{
+        transform: scale(1.3);
+    }
+    a{
+        text-decoration: none;
+        font-size: 17px;
+        color: royalblue;
+        margin: 5px;
+    }
+    
+}
+
+/*gradiente*/
+
+body{
+    background-image:  linear-gradient(to left,
+    black  , grey , black);
+}
+
+/* estilos secion main*/
+
+.sectionMain{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    .imgIndex{
+        width: 50%;
+        margin: 15px;
+    }
+    .imgIndex2{
+        width: 85%;
+        margin: 20px;
+    }
+    
+}
+/*estilos menu*/
+
+nav{
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            font-size: 17px;
+            margin: 25px;
+            background-color: white;
+            border-radius: 50px;
+            padding: 5px;
+        }
+    }
+
+}
+
+/*fin de imagenes index*/
+
+.videoIndex{
+    position: absolute;
+    right: 400px;
+}
+
+.linksRedes{
+    position: absolute;
+    top: 795px;
+    left: 50px;
+
+}
